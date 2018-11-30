@@ -1,11 +1,9 @@
 
 npm install http-server -g
 npm install -g twitter-proxy
-npm install reload
 
 npm start
-reload
 
-config nuser in listNameTwitter.json(only add or remove Nameuser) 
+config nuser by default user in listNameTwitter.json [ "name-1", ......... , "name-n"] 
 and 
-lisTimeNumberTweets.json = ( numberOftweets , timerefresh )
+lisTimeNumberTweets.json = [ numberOftweets , timerefresh , fixcolumn , ccsselectdefaul ]
