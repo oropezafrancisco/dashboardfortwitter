@@ -1,0 +1,11 @@
+
+npm install http-server -g
+npm install -g twitter-proxy
+npm install reload
+
+npm start
+reload
+
+config nuser in listNameTwitter.json(only add or remove Nameuser) 
+and 
+lisTimeNumberTweets.json = ( numberOftweets , timerefresh )

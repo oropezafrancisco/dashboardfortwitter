@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Frontend Coding Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesV02.css">
+        <script src="./funtions0.js"></script>
+        <script src="./funtions1.js"></script>
+        <script src="./funtions2.js"></script>
+        <script src="./funtions3.js"></script>
+        <script>
+        //def Var
+        var theSERVER = 'localhost'; //run en red change by 'xxx.xxx.xxx.xxx' run whit domain change by ex. 'www.example.com'
+        var timeOfRefresh = 60000; // defaul value by Reload page in seconds
+        var tuis = 30; // defaul value by load page
+        var initCrono = 0;
+        initLocalStorage();
+        initLocalStorage2();
+        var arrayTwitter = [];
+        var arrayRefresh = [];
+        //def Var
+        </script>
+    </head>
+<body id="body00">
+<div id="menu">
+  <div id="clock"></div>
+  <div>
+  <button type="button" onclick="menuOnOff()">&equiv;</button>
+  <form id='menuconfig1'>
+      <div id='menu001'></div>
+  </form>
+  <script>document.getElementById('menuconfig1').style.display ="none";</script>
+</div>
+<div>
+  <button type="button" onclick="menuOnOff2()">&#9679;</button>
+  <form id='menuconfig2'>
+      <div id='menu002'></div>
+  </form>
+  <script>document.getElementById('menuconfig2').style.display ="none";</script>
+</div>
+
+</div>
+<!-- main -->
+<div id="body01"></div>
+<!-- (-) is (+) :-) -->
+<!-- end main -->
+</body>
+<script>
+//*******************************************
+mainCorp();
+var timeOfRefresh = reLoadtime();
+var setRefresh = setInterval(function() {
+  mainCorp();
+}, timeOfRefresh);
+</script>
+</html>

@@ -1,0 +1,128 @@
+table
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font: 17px Calibri;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+  }
+form#menuconfig1
+    {
+      border: solid 1px #000;
+      background-color: #ddd;
+
+    }
+form#menuconfig2
+    {
+      border: solid 1px #000;
+      background-color: #ddd;
+
+    }
+table#t001
+    {
+    border: solid 10px #DDD0;
+    }
+table#t002
+    {
+    max-width: 400px;
+    border: solid 10px #DDD0;
+    background-color: #b1fbf7;
+    }
+div#menu
+    {
+      position: fixed;
+    }
+
+  p#showData0
+    {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+      background-color: #eee;
+    }
+  p#showData1
+    {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+      background-color: #ddd;
+    }
+  p#showData2
+    {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+      background-color: #ccc;
+    }
+  th#TheZ
+      {
+        background-color: #ddd;
+        vertical-align: 0;
+      }
+  th#TheZ0
+    {
+      background-color: #ccc;
+      vertical-align: 0;
+    }
+  th#TheZ1
+    {
+      background-color: #ddd;
+      vertical-align: 0;
+    }
+  th#TheZ2
+    {
+      background-color: #eee;
+      vertical-align: 0;
+    }
+    th#TitleZ
+      {
+        background-color: #8183bd;
+      }
+    th#TitleZ0
+      {
+        background-color: #8183bd;
+      }
+    th#TitleZ1
+      {
+        background-color: #8183bd;
+      }
+    th#TitleZ2
+      {
+        background-color: #8183bd;
+      }
+  th#thcontant
+    {
+      background-color: #888;
+    }
+  th#thtitle
+    {
+      background-color: #555;
+    }
+  td#timedate
+    {
+      font-size: small;
+      background-color:#2b82ab;
+    }
+  td#thcontantInfo
+    {
+    font-size: small;
+    background-color:#2f4a56;
+    }
+  td
+    {
+      background-color: #4e8cfb;
+      border-top-style: solid;
+      border-top-width: 3px;
+      border-top-color: #666;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #fff;
+    }
+
+  div#clock
+  {
+    font-size: small;
+    background-color:#2b82ab;
+  }
