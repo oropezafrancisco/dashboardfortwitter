@@ -57,8 +57,24 @@ function generatemenu()
     var userN = document.createElement("p");
     userN.innerHTML = '@'+'<input type="text" id="userIDnew" name="usertwitter"><button type="button" onclick="addUserT()">add</button>';
     menu01.appendChild(userN);
+
+    var userN = document.createElement("a");
+    userN.innerHTML ='<button type="button" >Save in HDD</button>';
+    menu01.appendChild(userN);
+
+    var userN = document.createElement("a");
+    userN.innerHTML ='<button type="button" >Load from HDD</button>';
+    menu01.appendChild(userN);
+
+    var userN = document.createElement("a");
+    userN.innerHTML ='<button type="button" >Reset to default</button>';
+    menu01.appendChild(userN);
+
     var divContainer11 = document.getElementById('menuconfig1');
     divContainer11.appendChild(menu01);
+
+
+
 };
 //***********************menu options********************
 function generatemenu2()
@@ -80,15 +96,15 @@ function generatemenu2()
       userN.innerHTML ='Style      :  ' + arrayMenu[3];
       menu02.appendChild(userN);
 
-      var userN = document.createElement("p");
+      var userN = document.createElement("a");
       userN.innerHTML ='<button type="button" >Save in HDD</button>';
       menu02.appendChild(userN);
 
-      var userN = document.createElement("p");
+      var userN = document.createElement("a");
       userN.innerHTML ='<button type="button" >Load from HDD</button>';
       menu02.appendChild(userN);
 
-      var userN = document.createElement("p");
+      var userN = document.createElement("a");
       userN.innerHTML ='<button type="button" >Reset to default</button>';
       menu02.appendChild(userN);
 
