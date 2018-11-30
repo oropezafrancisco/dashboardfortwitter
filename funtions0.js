@@ -66,7 +66,7 @@ for (var i = 0; i < tuis; i++) {
                   var b0 = arrItems[k]['user']['followers_count'];
                   var b1 = document.getElementById("TitleNombre0"+k).innerHTML;
                   var b2 = 'butTitleNombre0'+k;
-                  document.getElementById("TitleNombre0"+k).innerHTML = '<img alt="logo" height="25" width="25" src='+logoUser+'><a>'+b1+'_<a>'+'<button type="button" id='+b2+'>follower:'+b0+'</button>';
+                  document.getElementById("TitleNombre0"+k).innerHTML = '<img alt="logo" height="25" width="25" src='+logoUser+'><a>'+b1+'_</a>'+'<button type="button" id='+b2+'>follower:'+b0+'</button>';
                   document.getElementById('t002'+k).insertRow(-1);
                   var tr = document.createElement("tr");
                   document.getElementById('t002'+k).appendChild(tr);
@@ -113,7 +113,7 @@ for (var i = 0; i < tuis; i++) {
                           var yreTweets = "bth"+i+user_in_table;
                           var xtabTweets = theID_str;
                           var ytabTweets = "tth"+i+user_in_table;
-                          tabCell.innerHTML ='<button type="button" id='+ytabTweets+'>go tab</button><button type="button" id='+yreTweets+'>retw:'+theRT+'</button>';
+                          tabCell.innerHTML ='<button type="button" id='+ytabTweets+'>go tab</button><br><button type="button" id='+yreTweets+'>retw:'+theRT+'</button>';
                           document.getElementById(yreTweets).setAttribute("onclick", 'forRetweets('+xreTweets+')');
                           document.getElementById(ytabTweets).setAttribute("onclick", 'forOpentweets('+xtabTweets+')');
                   };
