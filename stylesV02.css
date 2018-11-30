@@ -98,7 +98,8 @@ div#menu
     }
   th#thtitle
     {
-      background-color: #555;
+      background-color: #000;
+      color: #fff;
     }
   td#timedate
     {
