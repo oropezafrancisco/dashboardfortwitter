@@ -107,7 +107,7 @@ for (var i = 0; i < tuis; i++) {
                           tabCell.innerHTML = d1.toUTCString();
                           var tabCell = tr.insertCell(-1);
                           tabCell.setAttribute("id","th"+i+user_in_table); //unique for retwits buttons o function
-                          tabCell.innerHTML = urlify(theText);
+                          tabCell.innerHTML = theText;
                           var tabCell = tr.insertCell(-1);
                           tabCell.setAttribute("id","thcontantInfo");
                           var xreTweets = theID_str;

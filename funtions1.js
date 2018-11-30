@@ -119,13 +119,7 @@ function menuOnOff2()
       x.style.display = 'none';
     }
 };
-//*************************start urlify*********************
-function urlify(text) {
-var urlRegex = /(https?:\/\/[^\s]+)/g;
-  return text.replace(urlRegex, function(url) {
-      return '<a target="_blank" href="' + url + '">' + url + '</a>';
-  });
-};
+
 //************************king body model 1 infinite column****************
 function madetable1(u1,u2)
 {
