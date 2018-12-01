@@ -34,19 +34,26 @@ for (var k = 0; k < arrayTwitter.length; k++) {
 };
 //******************************************
 function readTwitterProxy(urlUser, nameStorage,theIndexUser){
-
-  var xmlhttp = new XMLHttpRequest();
+  var xhr = new XMLHttpRequest();
   var url = urlUser;
-  xmlhttp.responseType = "json";
-  xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          sessionStorage.setItem(nameStorage, JSON.stringify(this.response));
-          subTable(nameStorage, theIndexUser);
+  xhr.open("GET", url);
+  xhr.responseType = "json";
+  xhr.send();
+  xhr.addEventListener("error", function () {
+      console.log(xhr.status);
+      console.log('Off line');
+      subTable(nameStorage, theIndexUser);
+  }, false);
 
+  xhr.addEventListener("load", function () {
+      if (xhr.status === 200) {
+        console.log(xhr.status);
+        console.log('On line');
+        sessionStorage.setItem(nameStorage, JSON.stringify(xhr.response));
+        subTable(nameStorage, theIndexUser);
       };
-  };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
+  }, false);
+
 };
 //*************************************
 function subTable(user_in_table,k)

@@ -1,5 +1,8 @@
-dash board multi timeline twitter
-flex for 'n' user , 'n' tweets and 'n' client, 
+npm install http-server -g
+npm install -g twitter-proxy
 
-francisco oropeza
-+56976173189
+npm start
+
+config nuser by default user in listNameTwitter.json [ "name-1", ......... , "name-n"]
+and
+default lisTimeNumberTweets.json = [ numberOftweets , timerefresh , fixcolumn , ccsselectdefaul ] 

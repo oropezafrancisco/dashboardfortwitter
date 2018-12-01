@@ -28,6 +28,10 @@ else {
             };
             //fileReader.readAsDataURL(xhr.response); // Load blob as Data URL
             fileReader.readAsText(xhr.response);
+            sessionStorage.setItem("listUserblod", xhr.response);
+        }else{
+          xhr.push = sessionStorage.getItem("listUserblod");
+          console.log(xhr.response);
         }
     }, false);
     // Send XHR
@@ -66,10 +70,34 @@ else {
             };
             //fileReader.readAsDataURL(xhr.response); // Load blob as Data URL
             fileReader.readAsText(xhr.response);
-        }
+            sessionStorage.setItem("listConfigblod", xhr.response);
+        }else{
+          xhr.push = sessionStorage.getItem("listConfigblod");
+          console.log(xhr.response);
+        };
     }, false);
     // Send XHR
     xhr.send();
     console.log('load default2 Ok');
 }
+};
+///******************************************************************
+function testproxy(){
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://localhost:7890/1.1/statuses/user_timeline.json?count=30&screen_name=makeschool");
+    xhr.responseType = "json";
+    xhr.send();
+    xhr.addEventListener("error", function () {
+        console.log(xhr.status);
+        console.log('what wea this is');
+        console.log(sessionStorage.getItem("makeschoolBlob"));
+    }, false);
+    xhr.addEventListener("load", function () {
+        if (xhr.status === 200) {
+          sessionStorage.setItem("makeschoolBlob", JSON.stringify(xhr.response[0]));
+          console.log('load new');
+        };
+    }, false);
+
 };
