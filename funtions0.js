@@ -43,6 +43,7 @@ function readTwitterProxy(urlUser, nameStorage,theIndexUser){
       console.log(xhr.status);
       console.log('Off line');
       subTable(nameStorage, theIndexUser);
+      resolve(new HttpResponse(200, null, null));
   }, false);
 
   xhr.addEventListener("load", function () {
