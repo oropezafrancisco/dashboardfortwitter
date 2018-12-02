@@ -106,6 +106,11 @@ div#menu
       font-size: small;
       background-color:#2b82ab;
     }
+  a#timedate
+      {
+        font-size: small;
+        background-color:#2b82ab;
+    }
   td#thcontantInfo
     {
     font-size: small;

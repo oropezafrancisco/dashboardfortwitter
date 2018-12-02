@@ -79,7 +79,7 @@ for (var i = 0; i < tuis; i++) {
                   var tr = document.createElement("tr");
                   document.getElementById('t002'+k).appendChild(tr);
                   var th = document.createElement("th");
-                  th.innerHTML = col[0];
+                  th.innerHTML = "";//col[0];
                   th.setAttribute("id","thtitle");
                   tr.appendChild(th);
                   var th = document.createElement("th");
@@ -87,7 +87,7 @@ for (var i = 0; i < tuis; i++) {
                   th.setAttribute("id","thtitle");
                   tr.appendChild(th);
                   var th = document.createElement("th");
-                  th.innerHTML = col[6];
+                  th.innerHTML = "";//col[6];
                   th.setAttribute("id","thtitle");
                   tr.appendChild(th);
 
@@ -103,6 +103,10 @@ for (var i = 0; i < tuis; i++) {
                     var theText = dict['text'];
                     var dict2 = dict['entities'];
                     var dict3 = dict2['urls'];
+                    var xreTweets = theID_str;
+                    var yreTweets = "bth"+i+user_in_table;
+                    var xtabTweets = theID_str;
+                    var ytabTweets = "tth"+i+user_in_table;
 
                     document.getElementById('t002'+k).insertRow(-1);
                       var tr = document.createElement("tr");
@@ -111,17 +115,14 @@ for (var i = 0; i < tuis; i++) {
                           tabCell.setAttribute("id","timedate");
                           var d1 = new Date(theDate);
                           var d2 = d1.toDateString();
-                          tabCell.innerHTML = d1.toUTCString();
+                          tabCell.innerHTML = "";//d1.toUTCString();
                           var tabCell = tr.insertCell(-1);
                           tabCell.setAttribute("id","th"+i+user_in_table); //unique for retwits buttons o function
-                          tabCell.innerHTML = theText;
+                          tabCell.innerHTML = '<a id="timedate" >'+d1.toUTCString()+'</a></br>'+theText+'</br><button type="button" id='+ytabTweets+'>go tab</button><button type="button" id='+yreTweets+'>retw:'+theRT+'</button>';
                           var tabCell = tr.insertCell(-1);
                           tabCell.setAttribute("id","thcontantInfo");
-                          var xreTweets = theID_str;
-                          var yreTweets = "bth"+i+user_in_table;
-                          var xtabTweets = theID_str;
-                          var ytabTweets = "tth"+i+user_in_table;
-                          tabCell.innerHTML ='<button type="button" id='+ytabTweets+'>go tab</button><br><button type="button" id='+yreTweets+'>retw:'+theRT+'</button>';
+
+                          tabCell.innerHTML ='';//'<button type="button" id='+ytabTweets+'>go tab</button><br><button type="button" id='+yreTweets+'>retw:'+theRT+'</button>';
                           document.getElementById(yreTweets).setAttribute("onclick", 'forRetweets('+xreTweets+')');
                           document.getElementById(ytabTweets).setAttribute("onclick", 'forOpentweets('+xtabTweets+')');
                   };
