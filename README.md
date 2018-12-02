@@ -8,5 +8,5 @@ and</br>
 default lisTimeNumberTweets.json = [ numberOftweets , timerefresh , fixcolumn , ccsselectdefaul ] </br>
 add .htaccess whit</br>
 ErrorDocument 404 /404.html</br>
-ErrorDocument 503 /offline.html</br>
+
 
