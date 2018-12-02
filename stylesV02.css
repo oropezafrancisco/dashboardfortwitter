@@ -79,6 +79,7 @@ div#menu
     th#TitleZ
       {
         background-color: #8183bd;
+
       }
     th#TitleZ0
       {
@@ -131,4 +132,8 @@ div#menu
   {
     font-size: small;
     background-color:#2b82ab;
+  }
+  img#logoUser
+  {
+    vertical-align: top;
   }
