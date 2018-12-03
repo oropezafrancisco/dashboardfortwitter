@@ -70,7 +70,7 @@ for (var i = 0; i < tuis; i++) {
     };
 };
               //**********************
-                  var logoUser = arrItems[k]['user']['profile_image_url'];
+                  var logoUser = arrItems[k]['user']['profile_image_url_https'];
                   var b0 = arrItems[k]['user']['followers_count'];
                   var b1 = document.getElementById("TitleNombre0"+k).innerHTML;
                   var b2 = 'butTitleNombre0'+k;
