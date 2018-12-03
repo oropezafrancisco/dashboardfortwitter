@@ -74,7 +74,7 @@ for (var i = 0; i < tuis; i++) {
                   var b0 = arrItems[k]['user']['followers_count'];
                   var b1 = document.getElementById("TitleNombre0"+k).innerHTML;
                   var b2 = 'butTitleNombre0'+k;
-                  document.getElementById("TitleNombre0"+k).innerHTML = '<img id="logoUser" alt="logo" height="25" width="25" src='+logoUser+'><a>'+b1+'</a>'+'<button type="button" id='+b2+'>follower:'+b0+'</button>';
+                  document.getElementById("TitleNombre0"+k).innerHTML = '<img id="logoUser" alt="logo" height="25" width="25" src='+logoUser+'><a>'+b1+'</a>';
                   document.getElementById('t002'+k).insertRow(-1);
                   var tr = document.createElement("tr");
                   document.getElementById('t002'+k).appendChild(tr);
@@ -83,7 +83,7 @@ for (var i = 0; i < tuis; i++) {
                   th.setAttribute("id","thtitle");
                   tr.appendChild(th);
                   var th = document.createElement("th");
-                  th.innerHTML = col[3];
+                  th.innerHTML = '<button type="button" id='+b2+'>follower:'+b0+'</button>'; //col[3];
                   th.setAttribute("id","thtitle");
                   tr.appendChild(th);
                   var th = document.createElement("th");
