@@ -58,6 +58,7 @@ div#menu
     }
   th#TheZ
       {
+        max-width: 500px;
         background-color: #ddd;
         vertical-align: 0;
       }
@@ -130,6 +131,7 @@ div#menu
 
   div#clock
   {
+    max-width: fit-content;
     font-size: small;
     background-color:#2b82ab;
   }
