@@ -9,4 +9,4 @@ and
 default lisTimeNumberTweets.json = [ numberOftweets , timerefresh , fixcolumn , ccsselectdefaul ] </br>
 optional in .htaccess : ErrorDocument 404 /404.html and fun</br>
 service work running OK</br>
-config for https send me whatsapp +56976173189
+
