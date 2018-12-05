@@ -4,4 +4,4 @@ spawn('twitter-proxy');
 spawn('http-server -P http://localhost:7890');
 
 console.log('Server running on http://localhost:8080');
-console.log('Request the Twitter API using: http://localhost:7890/1.1/statuses/user_timeline.json\?count\=30\&screen_name\=makeschool');
+console.log('twitter-proxy: http://localhost:7890');

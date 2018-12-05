@@ -1,3 +1,56 @@
+//************************king body model 1 infinite column****************
+function madetable1(u1,u2)
+{
+var x = document.createElement("table")
+{
+var y = document.createElement("tr")
+{ for (var i = 0; i < u1; i++)
+{
+  {
+          var z = document.createElement("th")
+            {
+              var w = document.createElement("cell");
+              w.innerHTML = "";
+              w.setAttribute("id","TitleNombre0"+i);
+              z.setAttribute("id","TitleZ");
+              z.appendChild(w);
+            };
+          y.setAttribute("id","TitleY"+i);
+          y.appendChild(z);
+        };
+    };
+
+};
+x.setAttribute("id","TitleX"+i);
+x.appendChild(y);
+};
+{
+var y = document.createElement("tr")
+{ for (var i = 0; i < u1; i++)
+{
+  {
+          var z = document.createElement("th")
+            {
+              var w = document.createElement("cell");
+              w.innerHTML = "";
+              w.setAttribute("id","Column0"+i);
+              z.setAttribute("id","TheZ");
+              z.appendChild(w);
+            };
+          y.setAttribute("id","TheY"+i);
+          y.appendChild(z);
+        };
+    };
+
+};
+x.setAttribute("id","TheX"+i);
+x.appendChild(y);
+};
+var divContainer4 = document.getElementById(u2);
+x.setAttribute("id","t001");
+divContainer4.appendChild(x);
+};
+//*******************************maincorp*********************
 function mainCorp(){
 
 var arrayRefresh = JSON.parse(localStorage.getItem("listConfig"));
@@ -22,7 +75,7 @@ for (var k = 0; k < arrayTwitter.length; k++) {
 
 
 for (var k = 0; k < arrayTwitter.length; k++) {
-              var url1="http://"+theSERVER+":7890/1.1/statuses/user_timeline.json?count="+tuis+"&screen_name="+arrayTwitter[k];
+              var url1= "http://localhost:8080/1.1/statuses/user_timeline.json?count="+tuis+"&screen_name="+arrayTwitter[k];
               var conteneDor = document.getElementById("Column0"+k);
               conteneDor.innerHTML = '<table id="t002'+k+'"></table>';
               var tt = '"t002'+k+'"';
